@@ -1,0 +1,36 @@
+title: Uriel
+author: Judka Linkov
+email: judka@uriel.world
+logo: /files/book/ohr.jpg
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://uriel.world" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  judka-uriel
+repository: https://github.com/judka-uriel/judka-uriel.github.io
+
+permalink: /:title # without :output_ext .html
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+      image: /files/book/ohr.jpg
+# - scope:
+#     path: "en/book"
+#   values:
+#     lang: "en"
+#     layout: "book"
+  - scope:
+      path: "ru/book"
+    values:
+      lang: "ru"
+      layout: "book"
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# sass:
+#   style: compressed
