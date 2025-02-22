@@ -1,0 +1,9 @@
+---
+layout: page
+---
+<div x-data="{ buttons: false }">
+{{ content }}
+{% if page.more_sidebar_html %}
+{{ page.more_sidebar_html }}
+{% endif %}
+</div>
