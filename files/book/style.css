@@ -1,5 +1,5 @@
 @media screen {
-  body {
+  .main-content {
     max-width: 785px;
     /* TODO: remove after moving to Jekyll */
     margin: 0 auto;
@@ -163,4 +163,9 @@ span.comment {
   border: 1px solid lightgrey;
   padding: 0 5px;
   margin-left: 5px;
+}
+@media (prefers-color-scheme: dark) {
+  .comment {
+    background-color: #202020;
+  }
 }

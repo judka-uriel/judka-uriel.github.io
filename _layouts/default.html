@@ -9,9 +9,8 @@
 {% endif %}
 {%- seo -%}
 {% feed_meta %}
-<link href="/favicon.png" rel="icon" type="image/png" />
-<link href="/files/css/style.css" rel="stylesheet" />
-{% for style in page.styles %}<link href="{{ style | relative_url }}" rel="stylesheet" />{% endfor %}
+<link href="/favicon.png" rel="icon" type="image/png" />{% for style in page.styles %}
+<link href="{{ style | relative_url }}" rel="stylesheet" />{% endfor %}
 <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
 <body>

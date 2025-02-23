@@ -1,4 +1,40 @@
 ---
 layout: default
 ---
-{{ content }}
+<div class="page" x-data="{ buttons: false }">
+  <div class="main-content">
+    {{ content }}
+  </div>
+
+  <aside id="right-sidebar">
+    <nav>
+      <h2>Содержание</h2>
+      <ul>
+      </ul>
+      {% if page.more_sidebar_html %}
+      {{ page.more_sidebar_html }}
+      {% endif %}
+    </nav>
+  </aside>
+</div>
+
+<button id="right-btn">
+  <div class="dots"></div>
+  <div class="dots"></div>
+  <div class="dots"></div>
+</button>
+
+<script>
+const right_btn = document.getElementById('right-btn');
+const right_sidebar = document.getElementById('right-sidebar');
+
+right_btn.addEventListener('click', () => {
+  right_sidebar.classList.toggle('active');
+});
+
+document.addEventListener('click', (event) => {
+  if (!right_btn.contains(event.target) && !right_sidebar.contains(event.target)) {
+    right_sidebar.classList.remove('active');
+  }
+});
+</script>

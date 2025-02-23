@@ -6,6 +6,7 @@ description: >-
 copyright: "(C) 2018-2024 Judka Linkov <judka@uriel.world>"
 lang: ru
 styles:
+- /files/css/style.css
 - /files/book/style.css
 more_sidebar_html: |
   <button @click="buttons = !buttons" @click.shift="$dispatch('openall')" @dblclick="$nextTick(() => {buttons = true; $dispatch('openall')})" x-init="if (buttons) $nextTick(() => {$dispatch('openall')})" :title="buttons ? 'Без комментариев' : 'С комментариями (Shift/DoubleClick - Open All)'">…</button>
