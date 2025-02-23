@@ -1,0 +1,11 @@
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background-color: black;
+  }
+  img {
+    border: 1px solid grey;
+    box-shadow: 0 0 10px grey;
+    filter: drop-shadow(0 0 5px grey);
+  }
+}
