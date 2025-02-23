@@ -37,7 +37,7 @@ p, ul, ol {
   margin-right: auto;
 }
 img {
-  max-width: 540px;
+  max-width: 100%;
 }
 figure {
   text-align: center;
@@ -63,6 +63,12 @@ table.chapter tr td {
 }
 table.chapter:not(.capitalize) tr td {
   vertical-align: text-top;
+}
+@media screen {
+  /* On print PDF it doesn't align nicely the capitalized letter. */
+  table.chapter.capitalize tr td {
+    vertical-align: text-top;
+  }
 }
 table.chapter tr:nth-child(1) td:nth-child(1) {
   font-weight: bold;
