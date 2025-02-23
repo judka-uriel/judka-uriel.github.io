@@ -8,7 +8,7 @@ lang: ru
 styles:
 - /files/book/style.css
 more_sidebar_html: |
-  <button @click="buttons = !buttons" @click.shift="$dispatch('openall')" x-init="if (buttons) $nextTick(() => {$dispatch('openall')})" :title="buttons ? 'Без комментариев' : 'С комментариями (Shift - Open All)'">…</button>
+  <button @click="buttons = !buttons" @click.shift="$dispatch('openall')" @dblclick="$nextTick(() => {buttons = true; $dispatch('openall')})" x-init="if (buttons) $nextTick(() => {$dispatch('openall')})" :title="buttons ? 'Без комментариев' : 'С комментариями (Shift/DoubleClick - Open All)'">…</button>
 ---
 
 <template x-if="buttons"><div class="comments" x-data="{ open: false }"><button @click="open = !open" @openall.window="open = true">…</button><div class="comment" x-show="open">

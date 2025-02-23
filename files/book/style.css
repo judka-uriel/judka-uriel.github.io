@@ -1,8 +1,9 @@
 @media screen {
   body {
-    margin: 2cm;
-    margin-left: 30%; /* TODO: remove after moving to Jekyll layout */
-    width: 785px;
+    max-width: 785px;
+    /* TODO: remove after moving to Jekyll */
+    margin: 0 auto;
+    padding: 1em;
   }
 }
 @font-face {
@@ -91,7 +92,6 @@ blockquote {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
   font-family: Arial, sans-serif;
   color: #2e4057;
   position: relative;
@@ -115,23 +115,19 @@ blockquote {
   max-width: 80%;
 }
 .title-page img {
-  margin-bottom: 120px;
 }
 .title-page .author {
   font-size: 18px;
   font-weight: bold;
-  position: absolute;
-  bottom: 2cm;
+  margin-top: 1em;
 }
 .title-page .edition {
   font-size: 20px;
-  position: absolute;
-  bottom: 1cm;
+  margin-top: 0.5em;
 }
 .title-page .year {
   font-size: 20px;
-  position: absolute;
-  bottom: 0cm;
+  margin-top: 0.5em;
 }
 .comment {
   background-color: #efefef;
