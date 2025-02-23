@@ -1,7 +1,7 @@
 title: Uriel
 author: Judka Linkov
 email: judka@uriel.world
-logo: /files/book/ohr.jpg
+logo: /logo.jpg
 # baseurl: "" # the subpath of your site, e.g. /blog
 # url: "https://uriel.world" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  judka-uriel
@@ -14,7 +14,7 @@ defaults:
       path: ""
     values:
       layout: "page"
-      image: /files/book/ohr.jpg
+      image: /logo.jpg
 # - scope:
 #     path: "en/book"
 #   values:
