@@ -1,10 +1,12 @@
 ---
 layout: default
 ---
-<div class="page" x-data="{ buttons: false }">
-  <div class="main-content">
-    {{ content }}
-  </div>
+<div class="page" x-data="{ buttons: false, right_sidebar_button: true, prev_scroll: 0 }" @scroll.window="right_sidebar_button = (window.pageYOffset < prev_scroll) ? true : false; prev_scroll = window.pageYOffset">
+  <button id="right-btn" x-show="right_sidebar_button">
+    <div class="dots"></div>
+    <div class="dots"></div>
+    <div class="dots"></div>
+  </button>
 
   <aside id="right-sidebar">
     <nav>
@@ -21,13 +23,11 @@ layout: default
       </ul>
     </nav>
   </aside>
-</div>
 
-<button id="right-btn">
-  <div class="dots"></div>
-  <div class="dots"></div>
-  <div class="dots"></div>
-</button>
+  <div class="main-content">
+    {{ content }}
+  </div>
+</div>
 
 <script>
 const right_btn = document.getElementById('right-btn');
