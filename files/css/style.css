@@ -34,6 +34,8 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transform: translateX(100%);
   transition: transform 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 
 #right-sidebar.active {
@@ -42,6 +44,11 @@ body {
 
 nav {
   padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  /* for Firefox */
+  min-height: 0;
 }
 
 nav h2 {
@@ -54,7 +61,12 @@ nav ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  space-between: 0.5rem;
+  white-space: nowrap;
+  flex-grow: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* for Firefox */
+  min-height: 0;
 }
 
 nav ul li {
@@ -76,7 +88,7 @@ nav ul li a:hover {
   padding: 2rem;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 3000px) {
   #right-btn {
     display: block;
   }
@@ -90,7 +102,7 @@ nav ul li a:hover {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 3000px) {
   .page {
     margin-right: 16rem;
   }

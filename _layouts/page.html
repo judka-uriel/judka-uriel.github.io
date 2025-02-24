@@ -10,10 +10,15 @@ layout: default
     <nav>
       <h2>Содержание</h2>
       <ul>
+        {% for item in page.toc %}
+        <li><a href="#{{ item.id }}">{{ item.title }}</a></li>
+        {%- endfor -%}
+        <li>
+        {% if page.more_sidebar_html %}
+        {{ page.more_sidebar_html }}
+        {% endif %}
+        </li>
       </ul>
-      {% if page.more_sidebar_html %}
-      {{ page.more_sidebar_html }}
-      {% endif %}
     </nav>
   </aside>
 </div>
@@ -33,7 +38,7 @@ right_btn.addEventListener('click', () => {
 });
 
 document.addEventListener('click', (event) => {
-  if (!right_btn.contains(event.target) && !right_sidebar.contains(event.target)) {
+  if (window.innerWidth < 1600 && !right_btn.contains(event.target) && !right_sidebar.contains(event.target)) {
     right_sidebar.classList.remove('active');
   }
 });
