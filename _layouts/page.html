@@ -1,14 +1,18 @@
 ---
 layout: default
 ---
-<div class="page" x-data="{ buttons: false, right_sidebar_button: true, prev_scroll: 0 }" @scroll.window="right_sidebar_button = (window.pageYOffset < prev_scroll) ? true : false; prev_scroll = window.pageYOffset">
-  <button id="right-btn" x-show="right_sidebar_button">
+<div class="page" x-data="{ buttons: false, prev_scroll: 0, right_sidebar_button: true, right_sidebar: false }"
+     @scroll.window="right_sidebar_button = (window.innerWidth > 1600 || window.pageYOffset < prev_scroll) ? true : false; prev_scroll = window.pageYOffset">
+
+  <button id="right-btn" x-show="right_sidebar_button"
+          @click="right_sidebar = !right_sidebar"
+          @click.outside="if (window.innerWidth < 1600) right_sidebar = false">
     <div class="dots"></div>
     <div class="dots"></div>
     <div class="dots"></div>
   </button>
 
-  <aside id="right-sidebar">
+  <aside id="right-sidebar" :class="{ 'active': right_sidebar }">
     <nav>
       <h2>Содержание</h2>
       <ul>
@@ -28,18 +32,3 @@ layout: default
     {{ content }}
   </div>
 </div>
-
-<script>
-const right_btn = document.getElementById('right-btn');
-const right_sidebar = document.getElementById('right-sidebar');
-
-right_btn.addEventListener('click', () => {
-  right_sidebar.classList.toggle('active');
-});
-
-document.addEventListener('click', (event) => {
-  if (window.innerWidth < 1600 && !right_btn.contains(event.target) && !right_sidebar.contains(event.target)) {
-    right_sidebar.classList.remove('active');
-  }
-});
-</script>
