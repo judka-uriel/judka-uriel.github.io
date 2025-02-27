@@ -11,20 +11,20 @@ permalink: /:title # without :output_ext .html
 
 defaults:
   - scope:
-      path: ""
+      path: "" # an empty string here means all files in the project
     values:
-      layout: "page"
-      image: /logo.jpg
+      lang: en
+      layout: default
 # - scope:
-#     path: "en/book"
+#     path: en/book
 #   values:
-#     lang: "en"
-#     layout: "book"
+#     lang: en
+#     layout: page
   - scope:
-      path: "ru/book"
+      path: ru/book
     values:
-      lang: "ru"
-      layout: "page"
+      lang: ru
+      layout: page
 
 plugins:
   - jekyll-redirect-from

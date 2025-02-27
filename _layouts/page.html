@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<div class="page" x-data="{ buttons: false, prev_scroll: 0, right_sidebar_button: true, right_sidebar: false }"
-     @scroll.window="right_sidebar_button = (window.innerWidth > 1600 || window.pageYOffset < prev_scroll) ? true : false; prev_scroll = window.pageYOffset">
+<div class="page" x-data="{ buttons: false, prev_scroll: 0, right_sidebar_button: false, right_sidebar: false }"
+     @scroll.window="right_sidebar_button = (window.innerWidth > 1000 || window.pageYOffset < prev_scroll) ? true : false; prev_scroll = window.pageYOffset">
 
   <button id="right-btn" x-show="right_sidebar_button"
           @click="right_sidebar = !right_sidebar"
@@ -14,11 +14,13 @@ layout: default
 
   <aside id="right-sidebar" :class="{ 'active': right_sidebar }">
     <nav>
-      <h2>Содержание</h2>
+      <h2>Оглавление</h2>
       <ul>
-        {% for item in page.toc %}
+        {% for item in page.toc %}{% if item.hide %}
+        <template x-if="buttons"><li><a href="#{{ item.id }}"><em class="comment">{{ item.title }}</em></a></li></template>
+        {% else %}
         <li><a href="#{{ item.id }}">{{ item.title }}</a></li>
-        {%- endfor -%}
+        {%- endif -%}{%- endfor -%}
         <li>
         {% if page.more_sidebar_html %}
         {{ page.more_sidebar_html }}

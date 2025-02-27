@@ -6,10 +6,10 @@ description: >-
 copyright: "(C) 2018-2024 Judka Linkov <judka@uriel.world>"
 lang: ru
 styles:
-- /files/css/style.css
+- /files/page/style.css
 - /files/book/style.css
 more_sidebar_html: |
-  <button @click="buttons = !buttons" @click.shift="$dispatch('openall')" @dblclick="$nextTick(() => {buttons = true; $dispatch('openall')})" x-init="if (buttons) $nextTick(() => {$dispatch('openall')})" :title="buttons ? 'Без комментариев' : 'С комментариями (Shift/DoubleClick - Open All)'">…</button>
+  <button @click="buttons = !buttons" @click.shift="$dispatch('openall')" @dblclick="buttons = true; $nextTick(() => {$dispatch('openall')})" :title="buttons ? 'Без комментариев' : 'С комментариями (Shift/DoubleClick - Open All)'">…</button>
 toc:
 - title: Хаос и пустота
   id: tohu-vavohu
@@ -39,6 +39,7 @@ toc:
   id: chutzpah
 - title: Постмодернизм
   id: postmodern
+  hide: true
 - title: Косноязычие
   id: kvad-peh
 - title: Исход
@@ -46,8 +47,8 @@ toc:
 - title: Персональные заповеди
   id: personal
 - title: Сирота, вдова, пришелец
-  id: orphan
-- title: История обращения
+  id: alien
+- title: Рут
   id: convert
 - title: Гилель и Шамай
   id: hillel-shammai
@@ -63,6 +64,7 @@ toc:
   id: sages
 - title: OCD
   id: ocd
+  hide: true
 - title: Добавление заповедей
   id: addition
 - title: Антисемитизм
@@ -85,8 +87,10 @@ toc:
   id: electricity
 - title: һавдала
   id: zmanim
+  hide: true
 - title: Северные широты
   id: north
+  hide: true
 - title: Кашрут
   id: kashrut
 - title: Жертвоприношения
@@ -99,6 +103,7 @@ toc:
   id: traditions
 - title: Типографика
   id: typography
+  hide: true
 - title: Молитвы
   id: prayers
 - title: Прогресс
@@ -141,6 +146,7 @@ toc:
   id: infinity
 - title: Чума XXI века
   id: corona
+  hide: true
 - title: Первый сон (война)
   id: dream-first
 - title: Второй сон (Китай)
@@ -3674,7 +3680,7 @@ to add marginalia supplementary to the main theme.</p>
 и откладывал на край тарелки.  Так моя еврейская душа уже с детства
 противилась некошерной пище.</p>
 
-<table class="chapter" id="orphan" title="Сирота, вдова, пришелец">
+<table class="chapter" id="alien" title="Сирота, вдова, пришелец">
   <tbody>
     <tr>
       <td>Я Г‑сподь, Б‑г твой, Который вывел тебя из земли египетской, из дома рабства.</td>
@@ -4508,7 +4514,7 @@ to add marginalia supplementary to the main theme.</p>
   <p>вы разогнали овец Моих и оттолкнули их, и не смотрели за ними (Йирмеяһу 23:2)</p>
 </blockquote>
 
-<p id="convert" title="История обращения">И вот в таком ужасном состоянии, в одиночестве, отверженный <!-- Le Misérable -->
+<p id="convert" title="Рут">И вот в таком ужасном состоянии, в одиночестве, отверженный <!-- Le Misérable -->
 ортодоксами, без денег и без работы, страдающий от ухудшающегося здоровья из-за
 отказа ортодоксов сделать мне обрезание, я начал усиленно учить Тору,
 чтобы разобраться в причинах такого вопиющего бессердечия ортодоксов,
@@ -19878,7 +19884,7 @@ provides common API for banks.</span></span></template></p>
 <template x-if="buttons"><span class="comments" x-data="{ open: false }"><button @click="open = !open" @openall.window="open = true">…</button><span class="comment" x-show="open">По этой же причине большую опасность представляет искусственный интеллект,
 кремниевая основа которого намного долговечнее углеродных форм жизни.</span></span></template></p>
 
-<template x-if="buttons"><div class="comments" x-data="{ open: false }"><button @click="open = !open" @openall.window="open = true">…</button><div class="comment" x-show="open">
+<template x-if="buttons"><div class="comments" x-data="{ open: true }"><button @click="open = !open" @openall.window="open = true">…</button><div class="comment" x-show="open">
 <table class="chapter" id="corona" title="Чума XXI века">
   <tbody>
     <tr>
