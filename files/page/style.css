@@ -3,13 +3,21 @@ body {
   padding: 0;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-visible {
+  overflow: visible;
+}
+
 #right-btn {
   position: fixed;
   top: 1rem;
   right: 1rem;
   padding: 0.5rem;
   background-color: #e9e9ed;
-  border: none;
+  border: solid lightgray 1px;
   border-radius: 0.25rem;
   display: none;
   cursor: pointer;

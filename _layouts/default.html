@@ -12,7 +12,8 @@
 <link href="{{ style | relative_url }}" rel="stylesheet" />{% endfor %}
 <script src="https://unpkg.com/alpinejs" defer></script>
 </head>
-<body>
+<body x-data="{ buttons: false, prev_scroll: 0, right_sidebar_button: false, right_sidebar: false }"
+      :class="(right_sidebar && window.innerWidth < 1600) ? 'overflow-hidden' : 'overflow-visible'">
 {{ content }}
 </body>
 </html>

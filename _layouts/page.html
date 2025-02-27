@@ -1,8 +1,7 @@
 ---
 layout: default
 ---
-<div class="page" x-data="{ buttons: false, prev_scroll: 0, right_sidebar_button: false, right_sidebar: false }"
-     @scroll.window="right_sidebar_button = (window.innerWidth > 1000 || window.pageYOffset < prev_scroll) ? true : false; prev_scroll = window.pageYOffset">
+<div class="page" @scroll.window="right_sidebar_button = (window.innerWidth > 1000 || window.pageYOffset < prev_scroll) ? true : false; prev_scroll = window.pageYOffset">
 
   <button id="right-btn" x-show="right_sidebar_button"
           @click="right_sidebar = !right_sidebar"
