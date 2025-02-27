@@ -1,11 +1,9 @@
-@media screen {
-  .main-content {
-    max-width: 785px;
-    /* TODO: remove after moving to Jekyll */
-    margin: 2em auto;
-    padding: 1em;
-  }
+.main-content {
+  max-width: 785px;
+  margin: 2em auto;
+  padding: 1em;
 }
+
 @font-face {
   font-family: 'GreatHebrewFont';
   src: url('./TaameyFrankCLM-Medium.ttf') format('truetype');
@@ -14,22 +12,19 @@
 html {
   font-family: GreatHebrewFont, DejaVu Sans;
   font-size: 120%;
-  /* SAME: font-size: 19.2px; */
 }
 code {
   /* Somehow Firefox doesn't use default font for <code> */
   font-family: GreatHebrewFont, DejaVu Sans;
 }
+
 a {
   color: inherit;
   text-decoration: underline;
   cursor: pointer;
 }
-/* first-line indentation not needed: */
-/* p { text-indent: 2em; } */
 p, ul, ol {
   text-align: justify;
-  /* text-wrap-style: pretty; */ /* no need to avoid orphans */
 }
 .center {
   display: block;
@@ -39,6 +34,7 @@ p, ul, ol {
 img {
   max-width: 100%;
 }
+
 figure {
   text-align: center;
 }
@@ -53,6 +49,7 @@ figcaption {
   color: grey;
   text-align: center;
 }
+
 table.chapter {
   width: 100%;
 }
@@ -61,14 +58,8 @@ table.chapter tr td {
   padding: 0;
   text-align: justify;
 }
-table.chapter:not(.capitalize) tr td {
+table.chapter tr td {
   vertical-align: text-top;
-}
-@media screen {
-  /* On print PDF it doesn't align nicely the capitalized letter. */
-  table.chapter.capitalize tr td {
-    vertical-align: text-top;
-  }
 }
 table.chapter tr:nth-child(1) td:nth-child(1) {
   font-weight: bold;
@@ -86,12 +77,14 @@ table.chapter tr:nth-child(2) td {
 table.capitalize tr:nth-child(1) td:nth-child(2)::first-letter {
   font-size: 150%;
 }
+
 blockquote {
   margin: 1em 0 0 0;
   padding: 0 0 0 1em;
   border-left: thick solid lightgrey;
   font-style: italic;
 }
+
 .title-page {
   display: flex;
   flex-direction: column;
@@ -120,10 +113,8 @@ blockquote {
   font-weight: 300;
   max-width: 80%;
 }
-@media screen {
-  .title-page img {
-    margin-top: 1em;
-  }
+.title-page img {
+  margin-top: 1em;
 }
 .title-page .author {
   font-size: 18px;
@@ -146,6 +137,7 @@ blockquote {
     background-color: lightblue;
   }
 }
+
 .comment {
   background-color: #efefef;
 }
