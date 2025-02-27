@@ -19,7 +19,6 @@ body {
   background-color: #e9e9ed;
   border: solid lightgray 1px;
   border-radius: 0.25rem;
-  display: none;
   cursor: pointer;
   z-index: 1000;
 }
@@ -40,14 +39,8 @@ body {
   width: 16rem;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transform: translateX(100%);
-  transition: transform 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
-}
-
-#right-sidebar.active {
-  transform: translateX(0);
 }
 
 nav {
@@ -90,33 +83,6 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: #f3f4f6;
-}
-
-.page {
-}
-
-@media (max-width: 3000px) {
-  #right-btn {
-    display: block;
-  }
-
-  #right-sidebar {
-    transform: translateX(100%);
-  }
-
-  #right-sidebar.active {
-    transform: translateX(0);
-  }
-}
-
-@media (min-width: 3000px) {
-  .page {
-    margin-right: 16rem;
-  }
-
-  #right-sidebar {
-    transform: translateX(0);
-  }
 }
 
 @media (prefers-color-scheme: dark) {

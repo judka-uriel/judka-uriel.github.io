@@ -1,17 +1,18 @@
 ---
 layout: default
 ---
-<div class="page" @scroll.window="right_sidebar_button = (window.innerWidth > 1000 || window.pageYOffset < prev_scroll) ? true : false; prev_scroll = window.pageYOffset">
+<div class="page" @scroll.window="right_sidebar_button = (right_sidebar || window.innerWidth > 1000 || window.pageYOffset < prev_scroll) ? true : false; prev_scroll = window.pageYOffset">
 
   <button id="right-btn" x-show="right_sidebar_button"
-          @click="right_sidebar = !right_sidebar"
-          @click.outside="if (window.innerWidth < 1600) right_sidebar = false">
+          @click="right_sidebar = !right_sidebar">
     <div class="dots"></div>
     <div class="dots"></div>
     <div class="dots"></div>
   </button>
 
-  <aside id="right-sidebar" :class="{ 'active': right_sidebar }">
+  <aside id="right-sidebar"
+         x-show="right_sidebar" x-transition.origin.top.right
+         @click.outside="if (window.innerWidth < 1600) right_sidebar = false">
     <nav>
       <h2>Оглавление</h2>
       <ul>
