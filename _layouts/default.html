@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />{% if page.keywords %}
-<meta name="keywords" content="{{page.keywords}}" />{% endif %}{% if page.subject %}
-<meta name="subject" content="{{page.subject}}" />{% endif %}{% if page.copyright %}
-<meta name="copyright" content="{{page.copyright}}" />{% endif %}
-{%- seo -%}
-{% feed_meta %}
-<link href="/favicon.png" rel="icon" type="image/png" />{% for style in page.styles %}
-<link href="{{ style | relative_url }}" rel="stylesheet" />{% endfor %}
-<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-</head>
+{%- include head.html -%}
 <body x-data="{ buttons: false, prev_scroll: 0, right_sidebar_button: false, right_sidebar: false }"
       :class="(right_sidebar && window.innerWidth < 1600) ? 'overflow-hidden' : 'overflow-visible'">
 {{ content }}
