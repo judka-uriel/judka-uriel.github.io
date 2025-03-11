@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 {%- include head.html -%}
-<body x-data="{ buttons: false, prev_scroll: 0, right_sidebar_button: false, right_sidebar: false }"
-      :class="(right_sidebar && window.innerWidth < 1600) ? 'overflow-hidden' : 'overflow-visible'">
+<body>
 {{ content }}
 </body>
 </html>

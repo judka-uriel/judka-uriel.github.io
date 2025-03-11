@@ -1,6 +1,9 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+{%- include head.html -%}
+<body x-data="{ buttons: false, prev_scroll: 0, right_sidebar_button: false, right_sidebar: false }"
+      :class="(right_sidebar && window.innerWidth < 1600) ? 'overflow-hidden' : 'overflow-visible'">
+
 <div class="page" @scroll.window="right_sidebar_button = (right_sidebar || window.innerWidth > 1000 || window.pageYOffset < prev_scroll) ? true : false; prev_scroll = window.pageYOffset">
 
   <style>
@@ -43,3 +46,5 @@ layout: default
     {{ content }}
   </main>
 </div>
+</body>
+</html>
