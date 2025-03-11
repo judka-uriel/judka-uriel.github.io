@@ -6,8 +6,8 @@ description: >-
 copyright: "(C) 2018-2024 Judka Linkov <judka@uriel.world>"
 lang: ru
 styles:
-- /files/page/style.css
-- /files/book/style.css
+- /files/book/page.css
+- /files/book/book.css
 more_sidebar_html: |
   <button x-data="{ clicked : false }"
           @click="if (!clicked) setTimeout(() => { buttons = !buttons; if (clicked == 2) $nextTick(() => {$dispatch('openall')}); clicked = false; }, 500); clicked = true"

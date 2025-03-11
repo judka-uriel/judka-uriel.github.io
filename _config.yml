@@ -19,12 +19,12 @@ defaults:
 #     path: en/book
 #   values:
 #     lang: en
-#     layout: page
+#     layout: book
   - scope:
       path: ru/book
     values:
       lang: ru
-      layout: page
+      layout: book
 
 plugins:
   - jekyll-redirect-from
