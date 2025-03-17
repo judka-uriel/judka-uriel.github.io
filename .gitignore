@@ -7,4 +7,5 @@ _site/
 
 # Tailwind style compiler
 node_modules
+package.json
 package-lock.json
