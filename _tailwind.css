@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    line-height: initial;
+    background-color: #f7f7f7;
+  }
+  p {
+    margin: 1em 0;
+  }
+  p:first-child {
+    margin-top: 0;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  img {
+    margin: auto;
+  }
+}

@@ -34,9 +34,11 @@
         <li><a href="#{{ item.id }}">{{ item.title }}</a></li>
         {%- endif -%}{%- endfor -%}
         <li>
-        {% if page.more_sidebar_html %}
-        {{ page.more_sidebar_html }}
-        {% endif %}
+          <button x-data="{ clicked : false }"
+                  @click="if (!clicked) setTimeout(() => { buttons = !buttons; if (clicked == 2) $nextTick(() => {$dispatch('openall')}); clicked = false; }, 500); clicked = true"
+                  @click.shift="clicked = 2"
+                  @dblclick="clicked = 2"
+                  :title="buttons ? 'Без комментариев' : 'С комментариями (Shift/DoubleClick - Open All)'">…</button>
         </li>
       </ul>
     </nav>

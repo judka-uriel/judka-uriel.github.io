@@ -20,11 +20,25 @@ defaults:
 #   values:
 #     lang: en
 #     layout: book
+# - scope:
+#     path: en/judka
+#   values:
+#     lang: en
+#     layout: card
+#     styles:
+#       - /files/page/style.css
   - scope:
       path: ru/book
     values:
       lang: ru
       layout: book
+  - scope:
+      path: ru/judka
+    values:
+      lang: ru
+      layout: card
+      styles:
+        - /files/page/style.css
 
 plugins:
   - jekyll-redirect-from

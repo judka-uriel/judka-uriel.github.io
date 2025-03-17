@@ -1,0 +1,65 @@
+---
+layout: default
+---
+<div class="bg-[#f7f7f7] dark:bg-[#18191a]" style="opacity: 1;">
+  <header class="bg-white dark:bg-[#18191a] h-max md:h-14 w-full shadow flex flex-col md:flex-row items-center justify-center md:justify-between fixed top-0 z-50 border-b dark:border-0 dark:border-dark-third">
+    <div class="flex items-center justify-between w-full md:w-max px-4 py-2">
+      <div class="mr-2 hidden md:inline-block cursor-pointer">
+        <img src="/logo.jpg" alt="Uriel logo" class="w-24 h-auto rounded-full" />
+      </div>
+      <div class="inline-block md:hidden cursor-pointer">
+        <img src="/logo.jpg" alt="" class="w-32 h-auto" />
+      </div>
+    </div>
+    <ul class="flex w-full lg:w-max items-center justify-center">
+      <li class="w-1/5 md:w-max text-center">
+        <div class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer text-center inline-block text-blue-500 border-b-4 border-blue-500">
+          Uriel
+        </div>
+      </li>
+    </ul>
+    <ul class="hidden md:flex mx-4 items-center justify-center">
+      <li>
+        <div class="text-xl grid place-items-center bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-800 dark:text-white rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+          Menu
+        </div>
+      </li>
+    </ul>
+  </header>
+
+  <section class="flex justify-center">
+    <sidebar class="bg-[#f7f7f7] dark:bg-[#18191a] w-1/5 pt-16 h-full hidden xl:flex flex-col fixed top-0 left-0">
+      <ul class="p-4">
+        <li>
+          <div class="flex justify-between cursor-pointer items-center space-x-2 p-2 hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg dark:text-white dark:hover:bg-dark-third mb-4">
+            <h1 class="text-2xl font-bold"><a href="/">Home</a></h1>
+          </div>
+        </li>
+        <li>
+          <div class="flex items-center space-x-2 p-2 cursor-pointer hover:bg-gray-200 dark:hover:bg-gray-800 rounded-lg dark:text-dark-txt">
+            Фотографии
+          </div>
+        </li>
+      </ul>
+
+      <div class="mt-auto p-6 text-sm text-gray-500 dark:text-gray-400">
+        <span>About</span>
+        <span> · </span>
+        Judka Linkov &copy; <span x-data="{ year: new Date().getFullYear() }" x-text="year">{{ "now" | date: "%Y" }}</span>
+      </div>
+    </sidebar>
+
+    <main class="w-full lg:w-2/3 xl:w-2/5 pt-32 lg:pt-16 px-2">
+      {{ content }}
+      <div class="py-2 px-4"></div>
+    </main>
+
+    <sidebar class="w-1/5 pt-16 h-full hidden xl:block px-4 fixed top-0 right-0">
+      <div class="h-full">
+        <div class="flex justify-between items-center px-0 pt-4">
+          <span class="font-semibold text-gray-500 text-lg dark:text-gray-300 mb-5"></span>
+        </div>
+      </div>
+    </sidebar>
+  </section>
+</div>
