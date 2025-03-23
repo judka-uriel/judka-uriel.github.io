@@ -597,6 +597,10 @@
   p:last-child {
     margin-bottom: 0;
   }
+  p a {
+    -webkit-text-decoration: revert;
+    text-decoration: revert;
+  }
   img {
     margin: auto;
   }
