@@ -1,0 +1,7 @@
+---
+title: Семья Линковых
+category: judka/photo/praded
+---
+Прадедушка Юдко, прабабушка Эстер-Малка и дедушка Давид с сестрой Томой:
+
+![family](/files/judka/photo/ded/photo0001.jpg)
