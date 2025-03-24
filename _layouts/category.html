@@ -4,12 +4,14 @@ layout: page
 <div class="dark:text-white">{{ content }}</div>
 
 <ul>
-{% assign pages = site.pages | where:"category",page.category_index %}
-{% assign pages = pages | sort:page.sortby %}
-{%- for p in pages -%}
+{%- assign pages = site.pages | where:"category",page.category_index -%}
+{%- if page.sortby -%}
+{%- assign pages = pages | sort:page.sortby -%}
+{%- endif -%}
+{% for p in pages %}
 <li>
-{% assign c = p.content | markdownify %}
-{% include card.html page=p content=c %}
+{%- assign c = p.content | markdownify -%}
+{%- include card.html page=p content=c -%}
 </li>
 {% endfor %}
 </ul>
