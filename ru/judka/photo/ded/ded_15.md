@@ -1,7 +1,6 @@
 ---
 title: 15 лет
-category: judka/photo/ded
-date: "1929-09-12"
+time: "1929-09-12"
 ---
 На этой фотографии, сделанной в районе
 [Сосновка](https://uk.wikipedia.org/wiki/Соснівка_(Черкаси))

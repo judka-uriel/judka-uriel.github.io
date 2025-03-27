@@ -1,6 +1,5 @@
 ---
 title: Прапрабабушка
-category: judka/photo/prapraded
 ---
 Прапрабабушка Песя Иосифовна:
 

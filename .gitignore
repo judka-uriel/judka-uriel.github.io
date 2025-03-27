@@ -1,11 +1,14 @@
-# Jekyll
+# Ruby
 Gemfile.lock
-.sass-cache/
-.jekyll-cache/
+.ruby-version
+
+# Jekyll
+/.sass-cache
+/.jekyll-cache
 .jekyll-metadata
-_site/
+/_site
 
 # Tailwind style compiler
-node_modules
-package.json
-package-lock.json
+/node_modules
+/package.json
+/package-lock.json

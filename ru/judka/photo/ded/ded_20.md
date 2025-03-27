@@ -1,7 +1,6 @@
 ---
 title: Около 20 лет
-category: judka/photo/ded
-date: "1934"
+time: "1934"
 ---
 ![](/files/judka/photo/ded/photo0003.jpg)
 

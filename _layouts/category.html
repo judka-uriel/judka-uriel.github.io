@@ -4,10 +4,8 @@ layout: page
 <div class="dark:text-white">{{ content }}</div>
 
 <ul>
-{%- assign pages = site.pages | where:"category",page.category_index -%}
-{%- if page.sortby -%}
-{%- assign pages = pages | sort:page.sortby -%}
-{%- endif -%}
+{%- assign dir = page.url | append: "/" -%}
+{%- assign pages = site.pages | where: "dir", dir -%}
 {% for p in pages %}
 <li>
 {%- assign c = p.content | markdownify -%}
