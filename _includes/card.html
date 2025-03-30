@@ -2,7 +2,11 @@
   <div class="flex items-center justify-between px-4 py-2">
     <div class="flex items-center">
       <div>
+        {%- if include.clickable -%}
         <div class="font-bold cursor-pointer"><a href="{{ include.page.url }}">{{ include.page.title }}</a></div>
+        {% else %}
+        <div class="font-bold">{{ include.page.title }}</div>
+        {% endif %}
         <span class="text-sm text-gray-500 dark:text-gray-400">{{ include.page.time }}</span>
       </div>
     </div>

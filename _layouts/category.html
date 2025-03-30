@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-{%- include card.html page=page content=content -%}
+{%- include card.html page=page content=content clickable=false -%}
 
 <ul>
 {%- assign dir = page.url | append: "/" -%}
@@ -9,7 +9,7 @@ layout: page
 {% for p in pages %}
 <li>
 {%- assign c = p.content | markdownify -%}
-{%- include card.html page=p content=c -%}
+{%- include card.html page=p content=c clickable=true -%}
 </li>
 {% endfor %}
 </ul>
