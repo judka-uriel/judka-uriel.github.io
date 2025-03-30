@@ -23,7 +23,7 @@ a {
   cursor: pointer;
 }
 #button-updates {
-  position: fixed;
+  position: absolute;
   top: 1rem;
   right: 1rem;
   color: #888;

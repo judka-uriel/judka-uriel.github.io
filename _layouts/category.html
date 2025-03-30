@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<div class="dark:text-white">{{ content }}</div>
+{%- include card.html page=page content=content -%}
 
 <ul>
 {%- assign dir = page.url | append: "/" -%}
