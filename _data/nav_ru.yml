@@ -1,15 +1,15 @@
 # Main SiteMap menu for Russian part of this site
 - title: Фотографии
-  url: /ru/judka/photo/
+  url: /ru/judka/photo
   nav:
   - title: Прапрадедушка
-    url: /ru/judka/photo/prapraded/
+    url: /ru/judka/photo/prapraded
   - title: Прадедушка
-    url: /ru/judka/photo/praded/
+    url: /ru/judka/photo/praded
   - title: Дедушка
-    url: /ru/judka/photo/ded/
+    url: /ru/judka/photo/ded
   - title: Отец
-    url: /ru/judka/photo/dad/
+    url: /ru/judka/photo/dad
 # - title: Фильмы
 #   url: /ru/judka/films/
 #   nav:
