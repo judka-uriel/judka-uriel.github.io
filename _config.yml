@@ -25,6 +25,8 @@ defaults:
 #   values:
 #     lang: en
 #     layout: card
+#     nav: "nav_en"
+#     nav_title: "Site Map"
 #     styles:
 #       - /files/page/style.css
   - scope:
@@ -37,6 +39,8 @@ defaults:
     values:
       lang: ru
       layout: card
+      nav: "nav_ru"
+      nav_title: "Карта сайта"
       styles:
         - /files/page/style.css
 
