@@ -2,4 +2,4 @@
 
 Mirror of uriel.world
 
-Copyright (C) 2018-2024  Judka Linkov <judka@uriel.world>
+Copyright (C) 2018-2025  Judka Linkov <judka@uriel.world>
