@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-<div class="bg-[#f7f7f7] dark:bg-[#18191a]" style="opacity: 1;" x-data="{ leftSidebarOpen: false, rightSidebarOpen: false }">
+<div class="bg-[#f7f7f7] dark:bg-[#18191a]" style="opacity: 1;"
+     x-data="{ leftSidebarOpen: false, rightSidebarOpen: false }"
+     @keydown.escape="leftSidebarOpen = false; rightSidebarOpen = false">
   {% include header.html %}
 
   <div class="flex justify-center">

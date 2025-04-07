@@ -10,8 +10,8 @@
       url: /ru/judka/photo/ded
     - title: Отец
       url: /ru/judka/photo/dad
-# - title: Фильмы
-#   url: /ru/judka/films/
-#   nav:
-#     - title: Кадры из фильмов
-#       url: /ru/judka/films/screenshots/
+- title: Фильмы
+  url: /ru/judka/films
+  nav:
+    - title: Кадры из фильмов
+      url: /ru/judka/films/screenshots
