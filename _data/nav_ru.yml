@@ -2,16 +2,16 @@
 - title: Фотографии
   url: /ru/judka/photo
   nav:
-  - title: Прапрадедушка
-    url: /ru/judka/photo/prapraded
-  - title: Прадедушка
-    url: /ru/judka/photo/praded
-  - title: Дедушка
-    url: /ru/judka/photo/ded
-  - title: Отец
-    url: /ru/judka/photo/dad
+    - title: Прапрадедушка
+      url: /ru/judka/photo/prapraded
+    - title: Прадедушка
+      url: /ru/judka/photo/praded
+    - title: Дедушка
+      url: /ru/judka/photo/ded
+    - title: Отец
+      url: /ru/judka/photo/dad
 # - title: Фильмы
 #   url: /ru/judka/films/
 #   nav:
-#   - title: Кадры из фильмов
-#     url: /ru/judka/films/screenshots/
+#     - title: Кадры из фильмов
+#       url: /ru/judka/films/screenshots/
