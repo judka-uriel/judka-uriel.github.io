@@ -15,3 +15,6 @@ Gemfile.lock
 
 # ImageMagick
 .convert
+
+# Emacs
+.dir-locals-2.el

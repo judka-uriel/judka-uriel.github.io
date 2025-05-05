@@ -11,7 +11,10 @@ layout: page
 {%- endif -%}
 {% for p in pages %}
 <li>
-{%- assign c = p.content | markdownify -%}
+{%- assign c = p.content -%}
+{%- if p.name contains ".md" -%}
+{%- assign c = c | markdownify -%}
+{%- endif -%}
 {%- if c contains "<!-- lj-cut -->" -%}
 {%- assign parts = c | split: "<!-- lj-cut -->" -%}
 {%- assign c = parts[0] -%}
