@@ -7,7 +7,7 @@ time: 1949
 запечатлён очевидный
 [киноляп](https://ru.wikipedia.org/wiki/Киноляп).
 
-![Самсон и Делайла](/files/judka/films/screenshots/1949_samson_and_delilah.jpg)
+![Самсон и Делайла](/files/films/screenshots/1949_samson_and_delilah.jpg)
 
 В чём ошибка?
 

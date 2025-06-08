@@ -11,7 +11,7 @@
     - title: Отец
       url: /ru/judka/photo/dad
 - title: Фильмы
-  url: /ru/judka/films
+  url: /ru/films
   nav:
     - title: Кадры из фильмов
-      url: /ru/judka/films/screenshots
+      url: /ru/films/screenshots
