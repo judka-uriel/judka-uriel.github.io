@@ -1,6 +1,7 @@
 ---
 title: Дедушка
 layout: category
+lazyload: true
 order: 3
 ---
 К 111-летию со дня рождения дедушки выложены его фотографии
