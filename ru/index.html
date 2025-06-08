@@ -3,20 +3,11 @@ description: "УРИЭЛЬ: Взгляд на мир сквозь призму �
 keywords: judaism, light
 copyright: "(C) 2018-2025 Judka Linkov <judka@uriel.world>"
 layout: default
+translations:
+  en: /en
 styles:
 - /files/home/style.css
 ---
-<meta http-equiv="refresh" content="0; url=/ru/" />
-
-<div x-data x-init="
-  const userLang = navigator.language || navigator.userLanguage;
-  if (userLang.startsWith('ru')) {
-    window.location.href = '/ru/';
-  } else {
-    window.location.href = '/ru/'; // TODO: '/en/'
-  }
-"></div>
-
 <div class="main-content">
   <div id="button-updates">
     <a href="https://uriel.social/@judka" target="_blank">Подписаться на обновления</a>
