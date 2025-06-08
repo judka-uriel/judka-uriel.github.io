@@ -14,7 +14,8 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       lang: en
-      layout: default
+      styles:
+        - /files/tailwind.css
 # - scope:
 #     path: en/book
 #   values:
@@ -27,13 +28,14 @@ defaults:
 #     layout: card
 #     nav: "nav_en"
 #     nav_title: "Site Map"
-#     styles:
-#       - /files/page/style.css
   - scope:
       path: ru/book
     values:
       lang: ru
       layout: book
+      styles:
+        - /files/book/page.css
+        - /files/book/book.css
   - scope:
       path: ru/judka
     values:
@@ -41,8 +43,6 @@ defaults:
       layout: card
       nav: "nav_ru"
       nav_title: "Карта сайта"
-      styles:
-        - /files/page/style.css
 
 plugins:
   - jekyll-redirect-from
