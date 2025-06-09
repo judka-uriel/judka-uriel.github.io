@@ -1,8 +1,7 @@
 ---
 layout: category
-nav: "nav_ru"
-nav_title: "Карта сайта"
-sortby: order
+translations:
+  en: /en/judka
 ---
 Добро пожаловать на сайт.
 

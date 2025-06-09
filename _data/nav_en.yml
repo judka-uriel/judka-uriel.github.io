@@ -1,0 +1,12 @@
+# Main SiteMap menu for English part of this site
+- title: Photos
+  url: /en/judka/photo
+  nav:
+    - title: Great-great-grandfather
+      url: /en/judka/photo/great-great-grandfather
+    - title: Great-grandfather
+      url: /en/judka/photo/great-grandfather
+    - title: Grandfather
+      url: /en/judka/photo/grandfather
+    - title: Father
+      url: /en/judka/photo/father

@@ -1,7 +1,7 @@
 ---
-title: Фотографии
+title: Photos
 layout: category
 sortby: order
 translations:
-  en: /en/judka/photo
+  ru: /ru/judka/photo
 ---
