@@ -10,3 +10,10 @@
       url: /en/judka/photo/grandfather
     - title: Father
       url: /en/judka/photo/father
+- title: Films
+  url: /en/films
+  nav:
+    - title: Screenshots
+      url: /en/films/screenshots
+- title: LLM
+  url: /en/llm

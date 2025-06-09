@@ -15,3 +15,5 @@
   nav:
     - title: Кадры из фильмов
       url: /ru/films/screenshots
+- title: LLM
+  url: /ru/llm
