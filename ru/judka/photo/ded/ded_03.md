@@ -9,4 +9,4 @@ time: "1917"
 А эту открытку с внуком отправил прапрадедушка Пейсах прапрадедушке Самсону и прапрабабушке Песе:
 
 ![](/files/judka/photo/ded/photo0007.jpg)
-![](/files/judka/photo/ded/photo0008.jpg)
+<!-- ![](/files/judka/photo/ded/photo0008.jpg) -->
