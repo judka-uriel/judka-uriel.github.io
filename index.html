@@ -10,8 +10,7 @@ styles:
 <meta http-equiv="refresh" content="0; url=/ru/" />
 
 <div x-data x-init="
-  const userLang = navigator.language || navigator.userLanguage;
-  if (userLang.startsWith('ru')) {
+  if (navigator.language.startsWith('ru') || navigator.languages.includes('ru')) {
     window.location.href = '/ru/';
   } else {
     window.location.href = '/ru/'; // TODO: '/en/'
