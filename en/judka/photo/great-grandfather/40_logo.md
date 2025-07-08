@@ -16,3 +16,7 @@ in Cherkassy on Paradnaya street.
 His brother Aizik ben Samson (Linkov A. S.)
 was also a photographer and in the early 20th century had his own photo
 studio "Valeri" opposite the State Men's Gymnasium on Suvorovsk. st.
+
+The stamps with which he marked his photographs have been preserved:
+
+![stamps](/files/judka/photo/praded/stamps.jpg)
