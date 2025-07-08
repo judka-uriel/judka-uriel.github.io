@@ -13,4 +13,4 @@ title: Братья Линковы
 Прадедушка поставил таймер на фотоаппарате
 и успел подбежать, чтобы встать рядом с братьями:
 
-<!-- TODO: ![family](/files/judka/photo/ded/photo0005.jpg) -->
+![Linkov brothers](/files/book/linkov_brothers.jpg)

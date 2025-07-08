@@ -13,4 +13,4 @@ The photograph was taken in great-grandfather's photo studio.
 Great-grandfather set the timer on the camera
 and managed to run over to stand next to his brothers:
 
-<!-- TODO: ![family](/files/judka/photo/ded/photo0005.jpg) -->
+![Linkov brothers](/files/book/linkov_brothers.jpg)
