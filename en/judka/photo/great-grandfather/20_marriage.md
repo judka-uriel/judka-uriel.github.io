@@ -2,9 +2,9 @@
 title: Marriage
 ---
 Great-grandfather Linkov Judko ben Samson
-and Esther-Malka bat Peisach married in 1909.
+and Esther-Malka bat Peisach married in 1909:
 
-![judka_malka](/files/judka/photo/praded/photo0004.jpg)
+![judka_malka](/files/judka/photo/praded/judka_malka.jpg)
 
 Great-grandfather was a photographer in Cherkasy (studied in Warsaw), and
 great-grandmother was a midwife (graduated in Kyiv in May 1908).
