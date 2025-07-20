@@ -20,3 +20,5 @@ studio "Valeri" opposite the State Men's Gymnasium on Suvorovsk. st.
 The stamps with which he marked his photographs have been preserved:
 
 ![stamps](/files/judka/photo/praded/stamps.jpg)
+
+There were 5 photographs in total in Cherkasy. Two of them belonged to the brothers.

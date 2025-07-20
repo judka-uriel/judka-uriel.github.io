@@ -9,3 +9,12 @@ time: "1933-05-02"
 Также интересно, что вместо машин ещё были извозчики.
 
 ![19 years old](/files/judka/photo/ded/2-05-1933_harkov.jpg)
+
+А закончил институт инженером в 1939 году.
+Фотография из выпускного альбома:
+
+![](/files/judka/photo/ded/hadi_graduation.jpg)
+
+Обложка выпускного альбома:
+
+![](/files/judka/photo/ded/hadi_cover.jpg)
