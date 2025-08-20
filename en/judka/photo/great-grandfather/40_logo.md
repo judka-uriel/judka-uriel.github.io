@@ -9,7 +9,7 @@ With this logo in the Internet there are
 [many](https://www.google.com/search?q="Линков+Ю+С")
 [photos](https://www.google.com/search?q="Ю+С+Линков"),
 made by great-grandfather in his photo studio
-in Cherkassy on Paradnaya street.
+in Cherkassy on Paradnaya street 12.
 
 ![logo](/files/judka/photo/praded/photo0002.jpg)
 
@@ -20,5 +20,3 @@ studio "Valeri" opposite the State Men's Gymnasium on Suvorovsk. st.
 The stamps with which he marked his photographs have been preserved:
 
 ![stamps](/files/judka/photo/praded/stamps.jpg)
-
-There were 5 photographs in total in Cherkasy. Two of them belonged to the brothers.
