@@ -1,0 +1,23 @@
+<div x-data="{ right_sidebar: false }">
+  <button id="right-btn"
+          @click="right_sidebar = !right_sidebar"
+          @keydown.escape="right_sidebar = false"
+          :aria-expanded="right_sidebar">
+    <div class="dots"></div>
+    <div class="dots"></div>
+    <div class="dots"></div>
+  </button>
+
+  <aside id="right-sidebar" x-cloak
+         x-show="right_sidebar" x-transition.origin.top.right
+         @click.outside="right_sidebar = false">
+    <nav>
+      <h2>{{ page.nav_title | default: "Sitemap" }}</h2>
+      <ul>
+      {%- for item in site.data[page.nav] -%}
+        <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {%- endfor -%}
+      </ul>
+    </nav>
+  </aside>
+</div>
