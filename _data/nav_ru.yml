@@ -1,4 +1,6 @@
 # Main SiteMap menu for Russian part of this site
+- title: Новая книга
+  url: /ru/book
 - title: Фотографии
   url: /ru/judka/photo
   nav:

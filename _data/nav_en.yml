@@ -1,4 +1,6 @@
 # Main SiteMap menu for English part of this site
+- title: New book
+  url: /en/book
 - title: Photos
   url: /en/judka/photo
   nav:
