@@ -26,7 +26,7 @@
          x-show="right_sidebar" x-transition.origin.top.right
          @click.outside="if (window.innerWidth < 1600) right_sidebar = false">
     <nav>
-      <h2>Оглавление</h2>
+      <h2>Index</h2>
       <ul>
         {% for item in page.toc %}{% if item.hide %}
         <template x-if="buttons"><li><a href="#{{ item.id }}"><em class="comment">{{ item.title }}</em></a></li></template>
@@ -34,11 +34,12 @@
         <li><a href="#{{ item.id }}">{{ item.title }}</a></li>
         {%- endif -%}{%- endfor -%}
         <li>
+          <button @click="setTimeout(() => { buttons = true; $nextTick(() => {$dispatch('openall')})}, 500)">Show comments</button>
           <button x-data="{ clicked : false }"
                   @click="if (!clicked) setTimeout(() => { buttons = !buttons; if (clicked == 2) $nextTick(() => {$dispatch('openall')}); clicked = false; }, 500); clicked = true"
                   @click.shift="clicked = 2"
                   @dblclick="clicked = 2"
-                  :title="buttons ? 'Без комментариев' : 'С комментариями (Shift/DoubleClick - Open All)'">…</button>
+                  :title="buttons ? 'Without comments' : 'With comments (Shift/DoubleClick - Open All)'">…</button>
         </li>
       </ul>
     </nav>
