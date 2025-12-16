@@ -1,0 +1,9 @@
+{%- if page.translations -%}
+<ul id="language-switcher">
+  <li><b>{{ page.lang }}</b></li>
+  {%- for tr in page.translations -%}
+  <li> | </li>
+  <li><a href="{{ tr[1] }}">{{ tr[0] }}</a></li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}
